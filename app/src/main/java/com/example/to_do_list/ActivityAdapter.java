@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,6 +18,7 @@ public class ActivityAdapter extends ArrayAdapter<ActivityModel> {
     private final Activity  context;
     ArrayList<ActivityModel> activityModels;
     DbHelper dbHelper;
+    Button btn;
     public ActivityAdapter(Activity context, ArrayList<ActivityModel> activities,DbHelper dbHelper) {
         super(context,R.layout.todo_activity,activities);
         this.context = context;
