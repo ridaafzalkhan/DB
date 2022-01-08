@@ -18,7 +18,7 @@ public class ActivityAdapter extends ArrayAdapter<ActivityModel> {
     private final Activity  context;
     ArrayList<ActivityModel> activityModels;
     DbHelper dbHelper;
-    Button btn;
+
     public ActivityAdapter(Activity context, ArrayList<ActivityModel> activities,DbHelper dbHelper) {
         super(context,R.layout.todo_activity,activities);
         this.context = context;
